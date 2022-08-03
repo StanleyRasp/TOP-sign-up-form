@@ -49,36 +49,37 @@
                     <div class="column">
                         <div class="form-field">
                             <label for="first-name">first name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <input type="text" id="first-name" name="first-name" required>
                         </div>
                         <div class="form-field">
                             <label for="email-adress">email</label>
-                            <input type="email" id="email-adress" name="email-adress">
+                            <input type="email" id="email-adress" name="email-adress" required>
                         </div>
                         <div class="form-field">
-                            <label for="password">passowrd</label>
-                            <input type="password" id="password" name="password">
+                            <label for="password">passowrd (4-16 chars)</label>
+                            <input type="password" id="password" minlength="4" maxlength="16" name="password" required>
+                            <p class="password-matching-text">* passwords have to match</p>
                         </div>
                     </div>
                     <div class="column">
                         <div class="form-field">
                             <label for="last-name">last name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" required>
                         </div>
                         <div class="form-field">
                             <label for="phone-number">phone number</label>
-                            <input type="tel" id="phone-number" name="phone-number">
+                            <input type="tel" id="phone-number" name="phone-number" required>
                         </div>
                         <div class="form-field">
                             <label for="confirm-pass">confirm password</label>
-                            <input type="password" id="confirm-pass" name="confirm-password">
+                            <input type="password" id="confirm-pass" minlength="4" maxlength="16" name="confirm-password" required>
                         </div>
                     </div>
                 </div>
 
             </div>
 
-            <button class="submit-button" type="submit">Create Account</button>
+            <button class="submit-button" type="button">Create Account</button>
 
             <p>Already have an account? <a href="">Log in</a></p>
         </form>

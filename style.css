@@ -43,7 +43,7 @@ body{
 a{
     color: rgb(223, 172, 129);
     text-decoration: none;
-    transition: color 75ms;
+    transition: all 75ms;
 }
 
 a:hover{
@@ -106,6 +106,15 @@ h2{
     padding: .5em;
     font-size: 1rem;
     border-radius: .5rem;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 5px -3px rgba(66, 68, 90, 1);
+    transition: all 150ms;
+}
+
+.form-field > input:focus{
+    border: 1px solid #111;
+    box-shadow: 1px 1px 8px -3px rgba(66, 68, 90, 1);
+    outline: none;
 }
 
 .submit-button{
@@ -117,16 +126,37 @@ h2{
     background-color: rgb(223, 172, 129);
     border: 0;
     border-radius: .5em;
+    cursor: pointer;
+    box-shadow: 3px 3px 9px -3px rgba(66, 68, 90, 1);
+    transition: box-shadow 75ms;
+}
 
-    -webkit-box-shadow: 3px 3px 12px -3px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 3px 3px 12px -3px rgba(66, 68, 90, 1);
-    box-shadow: 3px 3px 12px -3px rgba(66, 68, 90, 1);
+.submit-button:hover{
+    box-shadow: 4px 4px 12px -3px rgba(66, 68, 90, 1);
+}
+
+.submit-button:active{
+    box-shadow: 3px 3px 6px -3px rgba(66, 68, 90, 1);
 }
 
 p{
     margin: 0;
 }
 
+.column .form-field input.invalid{
+    border: 2px solid rgb(255, 0, 0);
+}
 
+.form-field input.error{
+    border: 2px solid rgb(255, 0, 0);
+}
 
+.password-matching-text{
+    height: fit-content;
+    width: fit-content;
+    display: none;
+    font-size: .8rem;
+    margin-top: .3em;
+    color: rgb(255, 0, 0);
+}
 
