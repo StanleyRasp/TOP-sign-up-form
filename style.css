@@ -1,0 +1,132 @@
+:root{
+    font-family: Montserrat, sans-serif;
+    --logo-section-size: 40%;
+    --form-side-margin: 5vw;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.logo-section{
+    width: var(--logo-section-size);
+    background-image: url(images/logo-background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-ribbon{
+    padding: 3vh 0;
+    margin-top: 20vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: .1em;
+}
+
+.photo-credit{
+    color: white;
+    margin: 2vh;
+    text-align: left;
+    font-family: inherit;
+}
+
+a{
+    color: rgb(223, 172, 129);
+    text-decoration: none;
+    transition: color 75ms;
+}
+
+a:hover{
+    color: rgba(223, 172, 129, 0.8);
+}
+
+.form-section{
+    width: calc(100% - var(--logo-section-size));
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form > *:not(div){
+    margin-left: var(--form-side-margin) !important;
+    margin-right: var(--form-side-margin) !important;
+}
+
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+}
+
+.form-data-inputs{
+    background-color: white;
+    padding: 2vh var(--form-side-margin);
+    -webkit-box-shadow: 0px 3px 9px -5px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 3px 9px -5px rgba(66, 68, 90, 1);
+    box-shadow: 0px 3px 9px -5px rgba(66, 68, 90, 1);
+}
+
+h2{
+    margin: 0 0 1vh 0;
+}
+
+.data-inputs{
+    display: flex;
+    gap: 4vw;
+}
+
+.form-field{
+    margin: 2vh 0;
+}
+
+.form-field > *{
+    display: block;
+}
+
+.form-field > label{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .2em;
+}
+
+.form-field > input{
+    margin-top: .5vh;
+    width: 15vw;
+    padding: .5em;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.submit-button{
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+    padding: 1em 3em;
+    font-weight: 700;
+    background-color: rgb(223, 172, 129);
+    border: 0;
+    border-radius: .5em;
+
+    -webkit-box-shadow: 3px 3px 12px -3px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 3px 3px 12px -3px rgba(66, 68, 90, 1);
+    box-shadow: 3px 3px 12px -3px rgba(66, 68, 90, 1);
+}
+
+p{
+    margin: 0;
+}
+
+
+
+

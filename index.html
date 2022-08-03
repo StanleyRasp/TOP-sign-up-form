@@ -7,18 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <script src="script.js" defer></script>
     <title>Sign Up!</title>
 </head>
 
 <body>
     <div class="logo-section">
+
         <div class="logo-ribbon">
-            SuccessFULL
+            LifePath
         </div>
+
         <div class="photo-credit">
-            Photo by <a href="https://unsplash.com/@withluke">Luke Stackpoole</a>
+            Photo by <a href="https://unsplash.com/@withluke" target="_blank">Luke Stackpoole</a>
         </div>
+
     </div>
 
     <div class="form-section">
@@ -37,24 +45,35 @@
 
                 <h2>Let's do this!</h2>
 
-                <div class="column">
-                    <label for="first-name">first name</label>
-                    <input type="text" id="first-name" name="first-name">
-                    <label for="email-adress">email</label>
-                    <input type="email" id="email-adress" name="email-adress">
-                    <label for="password">passowrd</label>
-                    <input type="password" id="password" name="password">
-                </div>
-
-                <div class="column">
-                    <label for="last-name">last name</label>
-                    <input type="text" id="last-name" name="last-name">
-            
-                    <label for="phone-number">phone-number</label>
-                    <input type="tel" id="phone-number" name="phone-number">
-            
-                    <label for="confirm-pass">confirm password</label>
-                    <input type="password" id="confirm-pass" name="confirm-password">
+                <div class="data-inputs">
+                    <div class="column">
+                        <div class="form-field">
+                            <label for="first-name">first name</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email-adress">email</label>
+                            <input type="email" id="email-adress" name="email-adress">
+                        </div>
+                        <div class="form-field">
+                            <label for="password">passowrd</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form-field">
+                            <label for="last-name">last name</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                        <div class="form-field">
+                            <label for="phone-number">phone number</label>
+                            <input type="tel" id="phone-number" name="phone-number">
+                        </div>
+                        <div class="form-field">
+                            <label for="confirm-pass">confirm password</label>
+                            <input type="password" id="confirm-pass" name="confirm-password">
+                        </div>
+                    </div>
                 </div>
 
             </div>
